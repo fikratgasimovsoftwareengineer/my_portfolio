@@ -1,0 +1,346 @@
+/* --- IMPORTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;500&family=Jost:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #00f2ff; /* Cyan Neon */
+    --secondary-color: #7000ff; /* Purple Neon */
+    --bg-dark: #0a0a0a;
+    --text-light: #e0e0e0;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* --- NAVIGATION (Glassmorphism) --- */
+.navbar {
+    background: rgba(10, 10, 10, 0.7) !important;
+    backdrop-filter: blur(15px); /* Effetto vetro sfocato */
+    border-bottom: 1px solid var(--glass-border);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    color: #fff !important;
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* --- HERO SECTION (The "Wow" Factor) --- */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* Gradiente scuro sopra l'immagine per leggibilità */
+   /* background: linear-gradient(to bottom, rgba(0,0,0,0.6), #0a0a0a), 
+                url('/images/computer_vision.jpeg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Titolo "Glitch" Style */
+.hero-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem; /* Più piccolo su mobile, vedi media query sotto */
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    
+    /* Gradiente sul testo */
+    background: linear-gradient(90deg, #fff, var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+    font-family: 'Roboto Mono', monospace;
+    color: #a0a0a0;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    border-right: 2px solid var(--primary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    max-width: 100%;
+}
+
+/* --- NEON BUTTON --- */
+.btn-tech {
+    background: transparent;
+    color: var(--primary-color);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    border: 1px solid var(--primary-color);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.btn-tech::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: var(--primary-color);
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.btn-tech:hover {
+    color: #000;
+    box-shadow: 0 0 20px var(--primary-color); /* Neon Glow */
+}
+
+.btn-tech:hover::before {
+    left: 0;
+}
+
+/* --- ANIMAZIONI --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Effetto scrittura macchina da scrivere (opzionale, rimuovi se da problemi) */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary-color) }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 0.9rem; white-space: normal; border: none; animation: none; }
+}
+
+
+/* --- PROJECTS SECTION (Cyberpunk Style) --- */
+
+/* Titolo Sezione */
+.section-heading {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    background: transparent;
+    border: 1px solid #333;
+    color: #888;
+    border-radius: 0; /* Squadrati per look tech */
+    padding: 8px 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+    margin: 0 5px 10px 5px;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: rgba(0, 242, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+}
+
+/* Project Card Container */
+.project-card-wrapper {
+    background: rgba(20, 20, 20, 0.6); /* Sfondo semi-trasparente */
+    border: 1px solid #333;
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card-wrapper:hover {
+    border-color: var(--secondary-color); /* Diventa viola al passaggio */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(112, 0, 255, 0.2);
+}
+
+/* Immagine Progetto */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    filter: grayscale(100%); /* Immagini in bianco e nero di default */
+    transition: filter 0.3s;
+    border-bottom: 1px solid #333;
+}
+
+.project-card-wrapper:hover .card-img-top {
+    filter: grayscale(0%); /* Colori vivi al passaggio del mouse */
+}
+
+/* Testi Card */
+.card-body {
+    padding: 1.5rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0) 100%);
+}
+
+.card-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-family: 'Jost', sans-serif;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Bottone Source Code */
+.btn-project {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-project:hover {
+    background: var(--primary-color);
+    color: #000;
+    text-decoration: none;
+}
+/* --- ABOUT PAGE STYLES --- */
+
+/* Contenitore principale: assicura sfondo scuro e spazio per la navbar fissa */
+.about-section {
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+    padding-top: 100px; /* Spazio per non finire sotto la navbar */
+    color: var(--text-light);
+}
+
+/* Effetto Foto Profilo */
+.profile-img-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.3);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--bg-dark); /* Crea distacco dal bordo colorato */
+    filter: grayscale(20%); /* Leggero desaturato per look tech */
+    z-index: 2;
+    position: relative;
+}
+
+.profile-name {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.profile-title {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Blocchi di Testo */
+.info-block {
+    border-left: 2px solid #333;
+    padding-left: 20px;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.info-block:hover {
+    border-left-color: var(--secondary-color);
+}
+
+.info-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.info-title svg {
+    color: var(--secondary-color);
+}
+
+/* Sovrascriviamo le classi text-muted di bootstrap per farle leggere sul nero */
+.text-muted {
+    color: #b0b0b0 !important; /* Grigio chiaro invece che scuro */
+    font-family: 'Jost', sans-serif;
+    line-height: 1.6;
+}
+
+.text-light {
+    color: #fff !important;
+}
