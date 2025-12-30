@@ -7,7 +7,7 @@ import About from './pages/About';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my_portfolio">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
