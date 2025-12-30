@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fikratgasimovsoftwareengineer.github.io/my_portfolio/static/css/main.93c3ce61.css",
+    "main.js": "/fikratgasimovsoftwareengineer.github.io/my_portfolio/static/js/main.136fd715.js",
+    "index.html": "/fikratgasimovsoftwareengineer.github.io/my_portfolio/index.html",
+    "main.93c3ce61.css.map": "/fikratgasimovsoftwareengineer.github.io/my_portfolio/static/css/main.93c3ce61.css.map",
+    "main.136fd715.js.map": "/fikratgasimovsoftwareengineer.github.io/my_portfolio/static/js/main.136fd715.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93c3ce61.css",
+    "static/js/main.136fd715.js"
+  ]
+}
