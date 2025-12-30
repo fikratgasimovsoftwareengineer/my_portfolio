@@ -1,7 +1,7 @@
 {
   "name": "fikrat-portofolio",
   "version": "0.1.0",
-  "homepage": "https://fikratgasimovsoftwareengineer.github.io/fikrat-portofolio/",
+  "homepage": "https://github.com/fikratgasimovsoftwareengineer.github.io/my_portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
