@@ -7,11 +7,7 @@ import About from './pages/About';
 
 function App() {
   return (
-<<<<<<< HEAD
-    <Router basename='/my_portfolio'>
-=======
     <Router basename="/my_portfolio">
->>>>>>> refs/remotes/origin/main
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
