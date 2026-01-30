@@ -19,6 +19,7 @@ const Projects = () => {
     { key: 'deep_learning', label: 'DEEP_LEARNING' },
     { key: 'embedded_desktop_dev', label: 'EMBEDDED_DEV' },
     { key: 'web_ai', label: 'WEB_AI' },
+    {key:'socrates_ai', label:'Socrates_AI'}
   ];
 
   return (
