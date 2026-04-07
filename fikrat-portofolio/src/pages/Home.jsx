@@ -1,5 +1,3 @@
-import React from 'react';
-import Navigation from '../components/Navigation';
 // import Projects from '../components/Projects'; // Scommenta quando pronto
 import { FaMicrochip, FaRobot, FaBrain, FaNetworkWired } from 'react-icons/fa'; // Icone Tech
 import Projects from '../components/Projects';
@@ -7,8 +5,7 @@ import Projects from '../components/Projects';
 const Home = () => {
   return (
     <>
-      <Navigation />
-      
+  
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
@@ -24,7 +21,7 @@ const Home = () => {
             {/* Sottotitolo stile codice */}
             <div className="d-flex justify-content-center">
                  <p className="hero-subtitle">
-                    Specialized in Robotics, Edge AI & Autonomous Systems
+                    Specialized in  Edge AI, Robotics and Autonomous Systems
                  </p>
             </div>
 

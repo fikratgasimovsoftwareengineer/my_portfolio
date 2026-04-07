@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projectsData } from '../data/projectsData';
-
+import Navigation from './Navigation';
 const Projects = () => {
+
+  <Navigation />
   const [filter, setFilter] = useState('all');
 
   const filteredProjects = filter === 'all' 
@@ -18,7 +20,8 @@ const Projects = () => {
     { key: 'avatar_ai', label: '2D_3D_GRAPHICS' },       // Corretto key per matchare i dati
     { key: 'deep_learning', label: 'DEEP_LEARNING' },
     { key: 'embedded_desktop_dev', label: 'EMBEDDED_DEV' },
-    { key: 'web_ai', label: 'WEB_AI' },
+    { key: 'web_ai', label: 'WEB_AI' }
+   /* {key: 'socrates_demo_ai', label:'Humanoid Socrates Philosopher'}*/
   ];
 
   return (
@@ -58,7 +61,7 @@ const Projects = () => {
                 className="col-md-4 mb-4"
               >
                 <div className="project-card-wrapper">
-                  <img src={project.img} className="card-img-top" alt={project.title} />
+                  <img src={project.image} className="card-img-top" alt={project.title} />
                   <div className="card-body d-flex flex-column">
                     <h5 className="card-title text-truncate">{project.title}</h5>
                     <p className="card-text">{project.description}</p>

@@ -273,6 +273,11 @@ body {
     color: var(--text-light);
 }
 
+.contact-section{
+    padding-top:200px;
+
+}
+
 /* Effetto Foto Profilo */
 .profile-img-container {
     position: relative;
