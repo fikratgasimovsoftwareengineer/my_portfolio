@@ -225,15 +225,35 @@ export const projectsData = [
     image: process.env.PUBLIC_URL + "/images/rl.jpeg",
     link: "https://github.com/fikratgasimovsoftwareengineer/Udemy_Py_TensorRT",
     btnText: "Source Code"
+  },
+
+  {
+    id: 25,
+    title:"Advanced AI OFFENSIVE Security System",
+    category:"advance_ai_security",
+    description:"Advanced AI Offensive Security System with Red Teaming and HacktheBox",
+    image: process.env.PUBLIC_URL + "/images/ai_act.png",
+    link: "https://github.com/fikratgasimovsoftwareengineer/AI_RedTeaming_HacktheBox",
+    btnText:"Source Code"
+  },
+  {
+    id: 26,
+    title:"Advanced AI DEFENSIVE Security System",
+    category:"advance_ai_security",
+    description:"Advancned AI Defensive Security System with Real-Time Threat Detection and Response",
+    image: process.env.PUBLIC_URL + "/images/ai_defensive.jpg",
+    link: "https://github.com/fikratgasimovsoftwareengineer/AI_RedTeaming_HacktheBox",
+    btnText:"Source Code"
+  },
+
+  {
+    id: 27,
+    title:"Agentic AI Native Operations",
+    category:"automation_ai_agentic",
+    description: "How to Build Agentic AI Native Operations for Seamless Automation and Orchestration",
+    image: process.env.PUBLIC_URL + "/images/multi_agent.jpeg",
+    link: "https://github.com/fikratgasimovsoftwareengineer/Agentic-AI-Workflow",
+    btnText:"Source Code"
   }
- /* {
-  id:25,
-  title: "Humanoid Socrates Philosopher-Robot",
-  category:"socrates_demo_ai",
-  description: "Lets Create Verbal Communication With Humanoid Socrates Philosopher-Robot",
-  img:"/images/socrates.jpeg",
-  link:"https://youtu.be/s-bp1dpAU3o",
-  btnText:"Source Code"
-  
-  }*/
+
 ];

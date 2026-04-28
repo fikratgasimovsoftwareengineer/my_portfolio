@@ -14,7 +14,7 @@ const About = () => {
             <Col lg={4} className="text-center mb-5 mb-lg-0">
               <div className="profile-img-container">
                 <img 
-                  src={process.env.PUBLIC_URL + '/images/Fikrat.jpeg'}
+                  src={process.env.PUBLIC_URL + '/images/image.jpg'}
                   alt="Fikrat Gasimov" 
                   className="img-fluid profile-img" 
                 />

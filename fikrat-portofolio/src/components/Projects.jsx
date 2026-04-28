@@ -15,6 +15,8 @@ const Projects = () => {
   // NOTA: Le 'key' devono corrispondere ESATTAMENTE al campo 'category' in projectsData.js
   const categories = [
     { key: 'all', label: 'ALL_SYSTEMS' },
+    {key:"advance_ai_security", label:"ADVANCED_AI_SECURITY"},
+    {key:"automation_ai_agentic", label:"Multi_Agent_AI_Orchestration"},
     { key: 'udemy', label: 'UDEMY_COURSES' },
     { key: 'openCV_robotics', label: 'OPENCV_ROBOTICS' }, // Corretto maiuscole/minuscole
     { key: 'avatar_ai', label: '2D_3D_GRAPHICS' },       // Corretto key per matchare i dati

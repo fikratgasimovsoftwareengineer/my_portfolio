@@ -15,6 +15,7 @@ const Navigation = () => {
             <Nav.Link as={Link} to="/">// HOME</Nav.Link>
             <Nav.Link as={Link} to="/about">// ABOUT</Nav.Link>
             <Nav.Link as = {Link} to="/projects">// PROJECTS</Nav.Link>
+            <Nav.Link as={Link} to="/certificates">// CERTIFICATES</Nav.Link>
             <Nav.Link as={Link} to="/contact">// CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>

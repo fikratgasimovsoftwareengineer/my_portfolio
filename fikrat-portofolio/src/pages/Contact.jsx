@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import {Row, Col, Form} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+
 const Contact = () => {
   return (
     <div className="contact-section">
