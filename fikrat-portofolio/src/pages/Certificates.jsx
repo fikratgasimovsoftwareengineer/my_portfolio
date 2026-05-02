@@ -5,7 +5,7 @@ import {} from "react-bootstrap";
 import { certificationsData } from "../data/certificationsData";
 // react pdf
 import {pdfjs,Document,Page} from "react-pdf";
-
+import CreadlyBadge from "./CreadlyBadge";
 
 import { FaShieldAlt, FaAws, FaExpand, FaDownload } from "react-icons/fa";
 
@@ -24,10 +24,44 @@ const Certificates = () =>{
 
   return (
 
+    <>
+<div className="d-flex justify-content-end mb-4" style={{ paddingRight: '60px', marginTop: '100px' }}>
+  <div style={{ 
+    width: 'fit-content',
+    filter: 'drop-shadow(0 0 8px rgba(0, 242, 255, 0.6))',
+    borderRadius: '8px',
+    textAlign: 'center'
+  }}>
+    {/* Label ISC2 visibile sopra */}
+    <div style={{
+      color: '#00f2ff',
+      fontWeight: 'bold',
+      fontSize: '0.85rem',
+      letterSpacing: '2px',
+      marginBottom: '4px',
+      textShadow: '0 0 8px #00f2ff'
+    }}>
+      ISC2 CERTIFIED
+    </div>
 
-  <div className="certificates-section">
+    <CreadlyBadge />
+
+    {/* "Provided by Credly" luminoso sotto */}
+    <div style={{
+      color:' #d0ff35',
+      fontSize: '0.7rem',
+      marginTop: '4px',
+      textShadow: '0 0 6px #d0ff35',
+      letterSpacing: '1px'
+    }}>
+      ✦ PROVIDED BY CREDLY ✦
+    </div>
+  </div>
+</div>
+    
+    <div className="certificates-section">
       <Container className="py-5">
-        <div className="text-center mb-5">
+        <div className="text-align: right;">
           <h2 className="section-heading">
             <span style={{color: '#00f2ff'}}>&lt;</span> CERTIFICATIONS <span style={{color: '#00f2ff'}}>/&gt;</span>
           </h2>
@@ -123,6 +157,8 @@ const Certificates = () =>{
         </Row>
       </Container>
     </div>
+
+    </>
   )
 };
 export default Certificates;
