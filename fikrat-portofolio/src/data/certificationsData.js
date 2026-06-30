@@ -145,5 +145,36 @@ export const certificationsData = [
     image: process.env.PUBLIC_URL + "/certifications/corso_avanzata.png",
     category: "general",
     type: "image"
+  },
+  {
+    id: 21,
+    title: "Deploy Applications on Amazon Elastic Kubernetes Service (EKS)",
+    image: process.env.PUBLIC_URL + "/certifications/aws_kuberneters_application_deployment_on.pdf",
+    category: "aws",
+    type: "pdf"
+  },
+    {
+    id: 22,
+    title: "KuberNeters Cores",
+    image: process.env.PUBLIC_URL + "/certifications/aws_kubernetes_cores.pdf",
+    category: "aws",
+    type: "pdf"
+  },
+  
+   {
+    id: 23,
+    title: "KuberNeters Cores",
+    image: process.env.PUBLIC_URL + "/certifications/aws_mlops_associate.pdf",
+    category: "aws",
+    type: "pdf"
+  },
+  {
+    id: 24,
+    title: "Autoscaling and Cost Optimization",
+    image: process.env.PUBLIC_URL + "/certifications/aws_kubernetes_cost.pdf",
+    category: "aws",
+    type: "pdf"
   }
+  
+
 ];

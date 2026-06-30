@@ -254,6 +254,15 @@ export const projectsData = [
     image: process.env.PUBLIC_URL + "/images/multi_agent.jpeg",
     link: "https://github.com/fikratgasimovsoftwareengineer/Agentic-AI-Workflow",
     btnText:"Source Code"
+  },
+  {
+    id: 28,
+    title:"Agentic VAPI Voice Assistant and Personal Interactive Agent",
+    category:"automation_ai_agentic",
+    description: "Building an Agentic AI Workflow for Intelligent Automation and Orchestration",
+    image: process.env.PUBLIC_URL + "/images/vapi_voice_automation.jpg",
+    link: "https://github.com/fikratgasimovsoftwareengineer/VAPI_Municipio_AI_Assistant",
+    btnText:"Source Code"
   }
 
 ];
