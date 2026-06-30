@@ -263,6 +263,16 @@ export const projectsData = [
     image: process.env.PUBLIC_URL + "/images/vapi_voice_automation.jpg",
     link: "https://github.com/fikratgasimovsoftwareengineer/VAPI_Municipio_AI_Assistant",
     btnText:"Source Code"
+  },
+   {
+    id: 29,
+    title:"Multi Agentic Socrates AI Chatbot",
+    category:"automation_ai_agentic",
+    description: "Building an Socrates AI Chatbot with Agentic AI Workflow for Intelligent Automation and Orchestration",
+    image: process.env.PUBLIC_URL + "/images/socrates_ai.jpg",
+    link: "https://github.com/fikratgasimovsoftwareengineer/chatbot-socrates-multi-agent",
+    btnText:"Source Code"
   }
+
 
 ];
