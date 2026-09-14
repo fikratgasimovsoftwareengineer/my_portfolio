@@ -272,7 +272,17 @@ export const projectsData = [
     image: process.env.PUBLIC_URL + "/images/socrates_ai.jpg",
     link: "https://github.com/fikratgasimovsoftwareengineer/chatbot-socrates-multi-agent",
     btnText:"Source Code"
-  }
+  },
+  
+  {
+    id: 30,
+    title:"Model Based Engineering with Agentic AI",
+    category:"automation_ai_agentic",
+    description: "Buil, Validate recursively Simulated YAML data to automatize Entire MBD Process with Agentic AI Workflow",
+    image: process.env.PUBLIC_URL + "/images/mbd.jpeg",
+    link: "https://github.com/fikratgasimovsoftwareengineer/agentic_mbe_copilot",
+    btnText:"Source Code"
+  },
 
 
 ];
