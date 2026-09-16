@@ -174,6 +174,20 @@ export const certificationsData = [
     image: process.env.PUBLIC_URL + "/certifications/aws_kubernetes_cost.pdf",
     category: "aws",
     type: "pdf"
+  },
+  {
+    id: 25,
+    title: "AWS Fargate with CI/CD Pipeline Creation",
+    image: process.env.PUBLIC_URL + "/certifications/CICD pipeline_advance.pdf",
+    category: "aws",
+    type: "pdf"
+  },
+  {
+    id: 26,
+    title: "AWS Certified Machine Learning Speciality",
+    image: process.env.PUBLIC_URL + "/certifications/AWS Certified_preparation.pdf",
+    category: "aws",
+    type: "pdf"
   }
   
 
