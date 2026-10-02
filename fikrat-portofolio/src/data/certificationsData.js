@@ -188,7 +188,15 @@ export const certificationsData = [
     image: process.env.PUBLIC_URL + "/certifications/AWS Certified_preparation.pdf",
     category: "aws",
     type: "pdf"
-  }
+  },
+  {
+   id: 27,
+   title: "Production Software Deployment to AWS EC2 with AWS CodeDeploy",
+   image: process.env.PUBLIC_URL + "/certifications/Deploying_Software_to_AmazonEC2_with_AWS_CodeDeploy.pdf",
+   category: "aws",
+   type: "pdf"
+   
   
-
+  }
+ 
 ];
