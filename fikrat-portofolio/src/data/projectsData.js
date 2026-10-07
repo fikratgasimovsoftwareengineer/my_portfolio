@@ -283,6 +283,16 @@ export const projectsData = [
     link: "https://github.com/fikratgasimovsoftwareengineer/agentic_mbe_copilot",
     btnText:"Source Code"
   },
+  {
+    id: 31,
+    title:"Automatic WorlWide Market Stock Analysis with LangGraph",
+    category:"automation_ai_agentic",
+    description: "Search, Route and Orchestrator different web search mecchanism to broaden market search analysis",
+    image: process.env.PUBLIC_URL + "/images/Agentic_Market_Analysis_Workflow.jpg",
+    link: "https://github.com/fikratgasimovsoftwareengineer/Agentic-AI-Workflow/tree/agentic_ai/agentic_ai_workflow/high_code_agentic_workflow/automatic_market_stock_analysis",
+    btnText:"Source Code"
+  
+  },
 
 
 ];
