@@ -294,5 +294,16 @@ export const projectsData = [
   
   },
 
+   {
+    id: 32,
+    title:"Automatic Carbon Emission Document Analysis with Google ADK",
+    category:"automation_ai_agentic",
+    description: "Recieve, extract and analyse , summarize of the Document or Images, that has content of Carbon Emission",
+    image: process.env.PUBLIC_URL + "/images/carbon_emissions.jpeg",
+    link: "https://github.com/fikratgasimovsoftwareengineer/Agentic-AI-Workflow/tree/agentic_ai/agentic_ai_workflow/high_code_agentic_workflow/climate-ai-management",
+    btnText:"Source Code"
+  
+  }
+
 
 ];
